@@ -1,4 +1,4 @@
-vendas_mensais = [1000, 2000, 3000]
+vendas_mensais = [1000, 2000, 500]
 
 def calcular_total_vendas(vendas):
     return sum(vendas)
