@@ -1,5 +1,5 @@
 from codigo import calcular_total_vendas, vendas_mensais
-import sys  # Coloque aqui no topo, junto com os outros imports
+import sys  # precisa estar no topo
 
 def testar_total_vendas():
     resultado = calcular_total_vendas(vendas_mensais)
@@ -11,4 +11,6 @@ def testar_total_vendas():
         print("✅ Teste passou! Total de vendas dentro da faixa esperada.")
     else:
         print("❌ Teste falhou! Valor fora da faixa. Resultado obtido:", resultado)
-        sys.exit(1)  # <- Isso aqui agora vai interromper corretamente o workflow
+        sys.exit(1)  # <- Isso é o que vai interromper o workflow como 'erro'
+
+testar_total_vendas()
